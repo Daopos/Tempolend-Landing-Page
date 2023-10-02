@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+  
+    height: 100%;
+    width: 100%;
+    background-color: #1E1E1E;
+}
+
+.rent-text {
+    animation: blinker 5s infinite;
+    transition:  ease-in-out;;
+}
+
+.vertical-color {
+    background-color: #FFD700;
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    left: 80px;
+}
+
+.horizontal-color {
+    background-color: #FFD700;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 80px;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: #1E1E1E;
+    font-size: 40px;
+}
+
+a:first-child {
+
+    margin-left: 190px;
+}
+
+a:nth-child(4) {
+    margin-right: 100px;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 130px;
+    margin-left: 15px;
+    background-color:#FFD700 ;
+    padding: 30px;
+    border: solid 20px #1E1E1E;
+}
+
+.tempo {
+    margin-top: 100px;
+    display: flex;
+}
+
+.two-text {
+    color: #FFFFFF;
+    margin-left: 70px;
+}
+
+.one {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -180px;
+    margin-right: -50px;
+    transform: rotate(20deg);
+    z-index: -1; /* Ensure they are behind your content */
+}
+
+.two {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -200px;
+    margin-right: 100px;
+    transform: rotate(-5deg);
+    z-index: -1; /* Ensure they are behind your content */
+}
+
+.two-text h1 {
+    font-size: 58px;
+    letter-spacing: 10px;
+
+}
+
+.two-text h4 {
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    width: fit-content;
+    white-space: nowrap; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.four-icons img {
+    width: 84px;
+}
+
+.four-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: -50px;
+    margin-left: 60px;
+}
+
+
+.icon-text {
+    display: flex;
+    gap: 20px;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.icon-text h1 {
+    letter-spacing: 2px;
+}
+
+.diamond {
+    width: 100px; /* Adjust the size as needed */
+    height: 340px; /* Approximate value for a regular hexagon */
+    background-color: #FFD700; /* Change this to your desired background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-left: 60px;
+    padding: 40px 0;
+    margin-top: -40px;
+    border-radius: 60px;
+  }
+  
+
+
+.diamond img {
+    width: 80px;
+}
+
+.diamond-text {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-left: 30px;
+    justify-content: center;
+    margin-top: 17px;
+    letter-spacing: 4px;
+}
+
+.about {
+    color: white;
+    margin-top: -50px;
+    margin-left: 40px;
+}
+.about p {
+    text-align: center;
+    text-wrap: wrap;
+    font-size: 24px;
+    max-width: 800px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 1360px) {
+    .one {
+        width: 30%;
+    }
+
+    .two {
+        width: 30%;
+    } 
+}
+
+@media only screen and (max-width: 852px) {
+    .vertical-color {
+        display: none;
+    }
+
+    a:first-child {
+        margin-left: 50px;
+    }
+    .logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .horizontal-color {
+        position: relative;
+        height: 200px;
+       top: 20px;
+    }
+
+    a:first-child {
+        margin-top: 100px;
+        margin-left: 0;
+    }
+    
+    a:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .tempo {
+        margin-top: 200px;
+        padding-bottom: 80px;
+    }
+
+    .about p {
+        font-size: 24px;
+    }
+
+    .diamond-text h1 {
+        font-size: 24px;
+    }
+
+    .diamond-text {
+        margin-bottom: 60px;
+    }
+
+
+    .two-text h1 {
+        font-size: 48px;
+      
+    
+    }
+    
+    .two-text h4 {
+   
+        font-size: 14px;
+    
+    }
+
+    .index-one {
+        width: 64%;
+    }
+
+    .index-two {
+        width: 70%;
+    }
+}
